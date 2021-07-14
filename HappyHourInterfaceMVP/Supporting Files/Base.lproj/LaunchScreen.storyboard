@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rG9-Eh-8AV">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map-->
+        <scene sceneID="IbH-wb-79Y">
+            <objects>
+                <viewController id="Va5-zv-QOo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xzy-xf-uU9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Iar-uc-aXe"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="Nxl-iw-YTM"/>
+                    <navigationItem key="navigationItem" id="9zn-SS-auW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y2a-W0-ZtM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606" y="1120"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="I2g-JD-jpw">
+            <objects>
+                <viewController id="lUg-og-mc5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yrf-qq-Zt4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ilB-Ff-Oeq"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="List" id="vAD-M1-Svp">
+                        <barButtonItem key="leftBarButtonItem" title="Filter" image="FilterIcon" id="t1E-7N-10x"/>
+                        <barButtonItem key="rightBarButtonItem" title="Info" image="InfoIcon" id="2on-6j-025"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="skh-vg-GXS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1515.9420289855075" y="399.77678571428572"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="OWF-MW-wMn">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="rG9-Eh-8AV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5mM-oi-OVq">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="D5A-vH-KX3" kind="relationship" relationship="viewControllers" id="hAs-fB-QmF"/>
+                        <segue destination="Va5-zv-QOo" kind="relationship" relationship="viewControllers" id="Wxr-hl-B8X"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wcV-5C-cQ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304.34782608695656" y="400.44642857142856"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="d1B-bB-PWl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D5A-vH-KX3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="List" image="FeedIcon" id="zB6-3o-BhC"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dYo-XL-uAd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lUg-og-mc5" kind="relationship" relationship="rootViewController" id="sk5-P0-5Kz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HCu-lJ-vAf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="605.79710144927537" y="399.77678571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FeedIcon" width="28" height="28"/>
+        <image name="FilterIcon" width="28" height="28"/>
+        <image name="InfoIcon" width="28" height="28"/>
+        <image name="MapIcon" width="28" height="28"/>
+    </resources>
+</document>
